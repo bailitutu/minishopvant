@@ -524,6 +524,9 @@ html,body{
 .pt-10{
   padding-top: 10px;
 }
+.bg-yellow{
+  background: #FFCF0B;
+}
 .c-yellow{
   color: #FFCF0B;
 }
@@ -532,6 +535,9 @@ html,body{
 }
 .c-33{
   color: #333333;
+}
+.c-money{
+  color: #DF0000;
 }
 .c-hui{
   color: #6E6E6E;

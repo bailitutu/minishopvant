@@ -1,16 +1,5 @@
 <template>
     <div class="page bg-f0">
-        <!--<van-address-edit-->
-                <!--:area-list="areaList"-->
-                <!--show-postal-->
-                <!--show-delete-->
-                <!--show-set-default-->
-                <!--show-search-result-->
-                <!--:search-result="searchResult"-->
-                <!--@save="onSave"-->
-                <!--@change-detail="onChangeDetail"-->
-        <!--/>-->
-
         <van-cell-group class="pt-10 bg-f0">
             <van-field v-model="people" label="收货人" placeholder="请输入用户名" />
             <van-field v-model="phone" label="手机号码" placeholder="请输入手机号码" />

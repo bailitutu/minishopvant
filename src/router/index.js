@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import test from '@/components/test'
 import personCenter from '@/pages/share/personCenter.vue'
+import shareGoodDetail from '@/pages/share/goodDetail.vue'
+import shareOrderList from '@/pages/share/orderList.vue'
 import agentRegister from '@/pages/share/agentRegister.vue'
 import registerSuccess from '@/pages/share/registerSuccess.vue'
 import sharePaySuccess from '@/pages/share/paySuccess.vue'
@@ -21,6 +23,16 @@ export default new Router({
             path: '/sharePersonCenter',
             name: '个人中心',
             component: personCenter
+        },
+        {
+            path: '/shareGoodDetail',
+            name: '商品详情',
+            component: shareGoodDetail
+        },
+        {
+            path: '/shareOrderList',
+            name: '我的订单',
+            component: shareOrderList
         },
         {
             path: '/shareAgentRegister',
