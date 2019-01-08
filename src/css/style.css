@@ -527,6 +527,9 @@ html,body{
 .bg-yellow{
   background: #FFCF0B;
 }
+.c-white{
+  color: #fff;
+}
 .c-yellow{
   color: #FFCF0B;
 }
@@ -535,6 +538,9 @@ html,body{
 }
 .c-33{
   color: #333333;
+}
+.c-b0{
+  color: #b0b0b0;
 }
 .c-money{
   color: #DF0000;

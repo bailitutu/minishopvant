@@ -9,6 +9,9 @@ import registerSuccess from '@/pages/share/registerSuccess.vue'
 import sharePaySuccess from '@/pages/share/paySuccess.vue'
 import shareAddressSelect from '@/pages/share/addressSelect.vue'
 import shareAddressEdit from '@/pages/share/addressEdit.vue'
+import shareOrderSubmit from '@/pages/share/orderSubmit.vue'
+import sharePerfectInfo from '@/pages/share/perfectInfo.vue'
+import shareApplyReject from '@/pages/share/applyReject.vue'
 
 Vue.use(Router)
 
@@ -35,9 +38,24 @@ export default new Router({
             component: shareOrderList
         },
         {
+            path: '/shareApplyReject',
+            name: '申请售后',
+            component: shareApplyReject
+        },
+        {
+            path: '/shareOrderSubmit',
+            name: '支付',
+            component: shareOrderSubmit
+        },
+        {
             path: '/shareAgentRegister',
             name: '代理注册',
             component: agentRegister
+        },
+        {
+            path: '/sharePerfectInfo',
+            name: '完善信息',
+            component: sharePerfectInfo
         },
         {
             path: '/sharePaySuccess',
@@ -58,6 +76,7 @@ export default new Router({
             path: '/shareAddressEdit',
             name: '新增地址',
             component: shareAddressEdit
-        }
+        },
+        
     ]
 })
