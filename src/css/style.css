@@ -586,8 +586,13 @@ html,body{
   background: #FFCF0B;
   color: #fff;
 }
-
+.hasNav{
+  padding-top: 46px;
+}
 /*设置主题*/
+.van-nav-bar .van-icon{
+  color: #434343;
+}
 .van-cell{
   padding:14px 15px;
 }

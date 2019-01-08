@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import test from '@/components/test'
+import addressList from '@/pages/manage/addressList.vue'
+import addressEdit from '@/pages/manage/addressEdit.vue'
 import personCenter from '@/pages/share/personCenter.vue'
 import shareGoodDetail from '@/pages/share/goodDetail.vue'
 import shareOrderList from '@/pages/share/orderList.vue'
@@ -22,6 +24,19 @@ export default new Router({
             name: 'test',
             component: test
         },
+    
+        {
+            path: '/addressList',
+            name: '地址管理',
+            component: addressList
+        },
+    
+        {
+            path: '/addressEdit',
+            name: '地址编辑',
+            component: addressEdit
+        },
+        
         {
             path: '/sharePersonCenter',
             name: '个人中心',
