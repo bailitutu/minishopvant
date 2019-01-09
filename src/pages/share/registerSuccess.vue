@@ -1,11 +1,11 @@
 <template>
-    <div class="page bg-f0">
+    <div class="page bg-f4">
         <div class="top_item">
             <img class="circle" src="../../assets/success_icon.png" alt="">
             <p class="c-33 fs-20">注册信息提交成功</p>
         </div>
 
-        <van-cell class="btn_item bg-f0">
+        <van-cell class="btn_item bg-f4">
             <van-button size="large">回到首页</van-button>
         </van-cell>
 

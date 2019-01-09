@@ -512,8 +512,17 @@ html,body{
   width: 100%;
   min-height: 100%;
 }
+.no_bg{
+  background: transparent;
+}
+.no_border{
+  border:none;
+}
 .bg-f0{
   background: #F0F2F5;
+}
+.bg-f4{
+  background:#f4f4f4;
 }
 .plr-12{
   padding: 0 12px;
@@ -521,11 +530,26 @@ html,body{
 .mt-10{
   margin-top: 10px;
 }
+.mb-10{
+  margin-bottom: 10px;
+}
+.ml-10{
+  margin-left: 10px;
+}
+.mr-10{
+  margin-right: 10px;
+}
 .pt-10{
   padding-top: 10px;
 }
 .bg-yellow{
   background: #FFCF0B;
+}
+.bg-white{
+  background: #ffffff;
+}
+.bg-green{
+  background: #4E6260;
 }
 .c-white{
   color: #fff;
@@ -551,6 +575,9 @@ html,body{
 .fs-20{
   font-size:20px;
 }
+.fs-18{
+  font-size:18px;
+}
 .fs-16{
   font-size:16px;
 }
@@ -560,10 +587,16 @@ html,body{
 .fs-12{
   font-size:12px;
 }
+.bb{
+  border-bottom: 1px solid #f4f4f4;
+}
 .hasBra{
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+}
+.hasFoo{
+  padding-bottom: 52px;
 }
 .circle{
   -webkit-border-radius: 50%;
@@ -590,6 +623,9 @@ html,body{
   padding-top: 46px;
 }
 /*设置主题*/
+.van-nav-bar__text{
+  color: #434343;
+}
 .van-nav-bar .van-icon{
   color: #434343;
 }
@@ -601,4 +637,7 @@ html,body{
 }
 .van-cell__left-icon{
   margin-right: 24px;
+}
+.van-nav-bar--fixed{
+  z-index: 99999 !important;
 }

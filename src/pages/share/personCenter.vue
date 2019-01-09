@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-f0 page pt-10">
+    <div class="bg-f4 page pt-10">
         <div class="header_item">
             <img src="../../assets/Bitmap.png" alt="">
         </div>

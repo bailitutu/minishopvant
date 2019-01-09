@@ -1,5 +1,12 @@
 <template>
-    <div class="page bg-f4">
+    <div class="page hasNav bg-f4">
+        <van-nav-bar
+                fixed
+                title="支付成功"
+                left-arrow
+                @click-left="backPage"
+        />
+
         <div class="top_item bg-white">
             <img class="circle" src="../../assets/success_icon.png" alt="">
             <p class="c-33 fs-20">支付成功</p>
@@ -19,16 +26,17 @@
             <div class="fs-14"><i class="icon_help"></i> 温馨提示</div>
             <p class="fs-12">本公司不会以订单异常、系统升级为由要求您点击任何网址链接进 行退款操作。</p>
         </div>
+
     </div>
 </template>
 
 <script>
-    import { Button,Row,Col} from 'vant'
+    import { Button,Row,Col ,NavBar} from 'vant'
 
     export default {
-        name: "pay-success",
-        components:{
-            Button,Row,Col
+        name: "stock-pay-success"
+        ,components:{
+            Button,Row,Col ,NavBar
         }
     }
 </script>
@@ -87,3 +95,4 @@
         }
     }
 </style>
+

@@ -1,11 +1,30 @@
 <template>
-    <div class="page bg-f4">
+    <div class="page hasNav hasFoo bg-f4">
+        <van-nav-bar
+                fixed
+                title="支付"
+                left-arrow
+                @click-left="backPage"
+        />
+
         <!--<van-cell is-link title="选择地址" :border="false" center>-->
         <!--</van-cell>-->
         <van-cell is-link class="address_select"  :border="false" center>
             <p class="fs-14 c-28">阿手动 <span class="c-hui">15198700989</span></p>
             <div  class="two_row c-hui fs-14">浙江省杭州市拱墅区祥园路88号智慧信息产业园 88号</div>
         </van-cell>
+
+        <van-cell-group class="mt-10">
+            <van-cell :border="false" style="height:44px;" title="请选择支付方式" ></van-cell>
+            <van-cell  >
+                <img src="../../assets/pay_icon1.png" slot="icon" alt="">
+                <p class="tal ml-10" slot="title" >余额支付 <span class="c-b0 ml-10">可用余额：￥8899.00</span></p>
+                <img src="../../assets/selected_icon.png" class="select_icon" slot="right-icon" alt="">
+            </van-cell>
+        </van-cell-group>
+
+
+
         <div class="good_list">
             <p class="title"> 订单信息</p>
             <div class="good_cell">
@@ -25,6 +44,18 @@
 
         </div>
 
+
+        <van-cell-group class="mt-10 mb-10">
+            <van-cell title="商品总额" value="¥778.00"></van-cell>
+            <van-cell title="订单总计">
+                <p class="tar fs-16 c-money">¥778.00</p>
+            </van-cell>
+            <van-cell title="实付金额">
+                <p class="tar fs-16 c-money">¥778.00</p>
+            </van-cell>
+        </van-cell-group>
+
+
         <div class="submit_item">
             <p class="fs-14 c-money">合计：¥148.00</p>
             <van-button size="normal" square class="cancel_btn" >取消订单</van-button>
@@ -34,11 +65,12 @@
 </template>
 
 <script>
-    import {Cell,Stepper ,CellGroup,SubmitBar  } from 'vant'
+    import {Cell,Stepper ,CellGroup,SubmitBar ,NavBar } from 'vant'
+
     export default {
-        name: "order-submit",
+        name: "stock-pay",
         components:{
-            Cell,Stepper,CellGroup,SubmitBar
+            Cell,Stepper,CellGroup,SubmitBar,NavBar
         }
     }
 </script>
@@ -134,5 +166,10 @@
             background: #FFCF0B;
         }
     }
+    .select_icon{
+        width: 20px;
+        height: 20px;
+    }
 
 </style>
+

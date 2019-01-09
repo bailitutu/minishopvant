@@ -1,5 +1,5 @@
 <template>
-    <div class="page bg-f0">
+    <div class="page bg-f4">
         <van-swipe :autoplay="3000" indicator-color="white">
             <van-swipe-item class="img_list" :style="{  height: imgHeight }">
                 <img src="../../assets/logo.png" alt="">

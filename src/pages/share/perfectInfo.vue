@@ -1,5 +1,5 @@
 <template>
-    <div class="page bg-f0">
+    <div class="page bg-f4">
         <van-cell class="fs-14 c-28 van-cell " :border="false"><span class="c-money">*</span>基本资料</van-cell>
         <van-cell-group>
             <van-field v-model="userName" label="姓名" placeholder="请输入真实姓名"/>
@@ -39,7 +39,7 @@
             <van-checkbox v-model="checked" shape="square" checked-color="#FFCF0B">提交注册即表示您已同意 <span @click.stop="checkProp"
                     class="c-yellow">《代理协议》</span></van-checkbox>
         </van-cell>
-        <van-cell class="mt-10 bg-f0">
+        <van-cell class="mt-10 bg-f4">
             <van-button size="large" class="submit_btn bg-yellow c-white">提交注册</van-button>
         </van-cell>
     </div>
