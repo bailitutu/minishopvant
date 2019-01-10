@@ -28,6 +28,9 @@ import wallet from '@/pages/wallet/wallet.vue'
 import withdraw from '@/pages/wallet/withdraw.vue'
 import withdrawDetail from '@/pages/wallet/withdrawDetail.vue'
 
+// 线下报备
+import reportList from '@/pages/report/reportList.vue'
+import reportEdit from '@/pages/report/reportEdit.vue'
 
 //分享H5
 import personCenter from '@/pages/share/personCenter.vue'
@@ -156,6 +159,16 @@ export default new Router({
             path: '/stockPaySuccess',
             name: '进货支付成功',
             component: stockPaySuccess
+        },
+        {
+            path: '/reportList',
+            name: '线下报备',
+            component: reportList
+        },
+        {
+            path: '/reportEdit',
+            name: '新增线下报备',
+            component: reportEdit
         },
         
         {
