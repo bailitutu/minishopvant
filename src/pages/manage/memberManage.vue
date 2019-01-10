@@ -9,8 +9,9 @@
         <div class="user_info">
             <img src="../../assets/member_bg.png" class="bg" alt="">
             <div class="user_detail">
-                <p>张三芬</p>
-                <p></p>
+                <img src="../../assets/Bitmap.png" alt="" class="member_head">
+                <p class="fs-16">张三芬</p>
+                <p class="fs-12 c-yellow">初级代理</p>
             </div>
         </div>
         <van-cell :border="false" class="bb">
@@ -42,7 +43,7 @@
                     <p class="c-28 tac fs-14">23453</p>
                 </van-col>
                 <van-col span="6" class="c-28">
-                    <p class="c-28 tac fs-14">张三(初级代理)</p>
+                    <p class="c-28 tac fs-14">张三(初级)</p>
                 </van-col>
                 <van-col span="6" class="c-28">
                     <p class="c-28 tac fs-14">34</p>
@@ -56,7 +57,7 @@
                     <p class="c-28 tac fs-14">23453</p>
                 </van-col>
                 <van-col span="6" class="c-28">
-                    <p class="c-28 tac fs-14">张三(初级代理)</p>
+                    <p class="c-28 tac fs-14">张三(初级)</p>
                 </van-col>
                 <van-col span="6" class="c-28">
                     <p class="c-28 tac fs-14">34</p>
@@ -70,7 +71,7 @@
                     <p class="c-28 tac fs-14">23453</p>
                 </van-col>
                 <van-col span="6" class="c-28">
-                    <p class="c-28 tac fs-14">张三(初级代理)</p>
+                    <p class="c-28 tac fs-14">张三(初级)</p>
                 </van-col>
                 <van-col span="6" class="c-28">
                     <p class="c-28 tac fs-14">34</p>
@@ -84,7 +85,7 @@
                     <p class="c-28 tac fs-14">23453</p>
                 </van-col>
                 <van-col span="6" class="c-28">
-                    <p class="c-28 tac fs-14">张三(初级代理)</p>
+                    <p class="c-28 tac fs-14">张三(初级)</p>
                 </van-col>
                 <van-col span="6" class="c-28">
                     <p class="c-28 tac fs-14">34</p>
@@ -98,7 +99,7 @@
                     <p class="c-28 tac fs-14">23453</p>
                 </van-col>
                 <van-col span="6" class="c-28">
-                    <p class="c-28 tac fs-14">张三(初级代理)</p>
+                    <p class="c-28 tac fs-14">张三(初级)</p>
                 </van-col>
                 <van-col span="6" class="c-28">
                     <p class="c-28 tac fs-14">34</p>
@@ -133,12 +134,22 @@
         }
         .user_detail{
             height:50px;
-            padding:0 40px;
+            padding:0 10px 0 55px;
             position: absolute;
             color: #ffffff;
             top:50%;
-            left: 0;
+            left: 40px;
             margin-top: -25px;
+            p{
+                line-height: 24px;
+            }
+            .member_head{
+                width: 45px;
+                height: 45px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
         }
 
     }

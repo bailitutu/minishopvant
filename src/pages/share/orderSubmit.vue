@@ -34,12 +34,8 @@
 </template>
 
 <script>
-    import {Cell,Stepper ,CellGroup,SubmitBar  } from 'vant'
     export default {
         name: "order-submit",
-        components:{
-            Cell,Stepper,CellGroup,SubmitBar
-        }
     }
 </script>
 
