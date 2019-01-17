@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import test from '@/components/test'
 
 // 管理中心
+import manageCenter from '@/pages/manage/manageCenter.vue'
+import salesManage from '@/pages/manage/salesManage.vue'
 import addressList from '@/pages/manage/addressList.vue'
 import addressEdit from '@/pages/manage/addressEdit.vue'
 import shareHistory from '@/pages/manage/shareHistory.vue'
@@ -13,6 +15,7 @@ import mineChief from '@/pages/manage/mineChief.vue'
 import memberManage from '@/pages/manage/memberManage.vue'
 import microWarehouse from '@/pages/manage/microWarehouse.vue'
 import stockList from '@/pages/manage/stockList.vue'
+import stockDetail from '@/pages/manage/stockDetail.vue'
 import stockOrder from '@/pages/manage/stockOrder.vue'
 import stockPay from '@/pages/manage/stockPay.vue'
 import stockPaySuccess from '@/pages/manage/stockPaySuccess.vue'
@@ -54,7 +57,16 @@ export default new Router({
             name: 'test',
             component: test
         },
-    
+        {
+            path: '/salesManage',
+            name: '销售管理',
+            component: salesManage
+        },
+        {
+            path: '/manageCenter',
+            name: '管理中心',
+            component: manageCenter
+        },
         {
             path: '/addressList',
             name: '地址管理',
@@ -160,6 +172,13 @@ export default new Router({
             name: '进货支付成功',
             component: stockPaySuccess
         },
+    
+        {
+            path: '/stockDetail',
+            name: '进出仓明细',
+            component: stockDetail
+        },
+    
         {
             path: '/reportList',
             name: '线下报备',
