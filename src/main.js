@@ -7,8 +7,11 @@ import Vant from 'vant';
 import 'vant/lib/index.css';
 import '@/css/style.css';
 
+import  vueScroll from 'vuescroll'
 Vue.use(Vant);
 Vue.config.productionTip = false
+
+Vue.use(vueScroll )
 
 /* eslint-disable no-new */
 new Vue({

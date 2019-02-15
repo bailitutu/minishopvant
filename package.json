@@ -12,7 +12,8 @@
   "dependencies": {
     "vant": "^1.5.1",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuescroll": "^4.10.5"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
